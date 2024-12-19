@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/DailyMondyRepo/static/css/main.62a3a9c8.css",
+    "main.js": "/DailyMondyRepo/static/js/main.2913d779.js",
+    "static/media/tomato.jfif": "/DailyMondyRepo/static/media/tomato.939620a50396a9e51a19.jfif",
+    "static/media/onion.jfif": "/DailyMondyRepo/static/media/onion.8b1e0c7a8b0c4b6eaea7.jfif",
+    "static/media/potato.jfif": "/DailyMondyRepo/static/media/potato.111a04e1d184d8836313.jfif",
+    "static/media/Peas.jfif": "/DailyMondyRepo/static/media/Peas.ffa6e59041bce3711adf.jfif",
+    "static/media/Lehsun.jfif": "/DailyMondyRepo/static/media/Lehsun.351ea4e50f80218423a9.jfif",
+    "index.html": "/DailyMondyRepo/index.html",
+    "main.62a3a9c8.css.map": "/DailyMondyRepo/static/css/main.62a3a9c8.css.map",
+    "main.2913d779.js.map": "/DailyMondyRepo/static/js/main.2913d779.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62a3a9c8.css",
+    "static/js/main.2913d779.js"
+  ]
+}
