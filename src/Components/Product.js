@@ -6,15 +6,16 @@ export default function Product({
   index,
   incrementQuantity,
   decrementQuantity,
+  handleBuyNow
 }) {
-  const showAlert = ()=>{
+ {/* const showAlert = ()=>{
     if(product.quantity>0){
     window.alert("Order Confirmation Successful.");
     }
     else{
       window.alert("You need to select Atleast one Product.");
     }
-  };
+  };*/}
   return (
     <div className="row">
       <div className="Product-info">
@@ -46,7 +47,7 @@ export default function Product({
       </div>
       <div className="col-2">
         <span id="amount">Total amount ₹{product.quantity * product.price}</span>
-        <button id="buy" onClick={showAlert}>Buy</button>
+        <button id="buy" onClick={() => handleBuyNow(index)}>Buy</button>
       </div>
       
     </div>

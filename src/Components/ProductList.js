@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from './Product';
 
-export default function ProductList({ productList, incrementQuantity, decrementQuantity }) {
+export default function ProductList({ productList, incrementQuantity, decrementQuantity, handleBuyNow }) {
   return (
     <div>
       {productList.map((product, index) => (
@@ -11,6 +11,7 @@ export default function ProductList({ productList, incrementQuantity, decrementQ
           index={index}
           incrementQuantity={incrementQuantity}
           decrementQuantity={decrementQuantity}
+          handleBuyNow={handleBuyNow}
         />
       ))}
     </div>
