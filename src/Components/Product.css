@@ -79,7 +79,7 @@ button {
     color: #eee;
     font-size: 16px;   
 }
-@media only screen and (min-width:301px) and (max-width: 600px){
+@media only screen and (min-width:250px) and (max-width: 600px){
     .row{
         width: 1030px;
         height: 500px;

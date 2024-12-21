@@ -35,10 +35,21 @@
     z-index: -1;
     background: rgba(0, 0, 0, 0.39);
 }
+#readmore{
+    width: 120px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #eee;
+    margin-top: 15px;
+    border: 1px solid #fff;
+    backdrop-filter: blur(10px);
+    background: none;
+    border-radius: 15px;
+}
 @media only screen and (min-width:300px) and (max-width: 600px){
     .hero-page{
         width: 1372px;
-        border: 1px solid red;
         overflow-y: hidden;
     }
     #heroImg{
@@ -50,7 +61,6 @@
 @media only screen and (min-width:603px) and (max-width: 1200px){
     .hero-page{
         width: 1372px;
-        border: 1px solid red;
         overflow-y: hidden;
     }
     #heroImg{

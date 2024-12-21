@@ -15,8 +15,10 @@ import EggplantsImg from "./Components/productImg/Eggplants.jfif";
 import CapsicumImg from "./Components/productImg/Capsicum.jfif";
 import Futter from "./Components/Futter";
 import HeroSection from "./Components/HeroSection";
+import UserProfile from "./Components/UserProfile";
 
 function App() {
+  const [username, setUsername] = useState(null);
   const initialProductList = [
     { img: tomatoImg, price: 40, name: "Tomato", quantity: 0 },
     { img: LehsunImg, price: 50, name: "Garlic", quantity: 0 },
@@ -93,10 +95,12 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <HeroSection />
+        <Navbar username={username}/>
+    
         <Routes>
-          <Route path="Register" element={<LoginForm />} />
+        <Route path="DailyMondyRepo" element={<HeroSection/>} />
+        <Route path="Profile" element={<UserProfile username={username} cart={cart}/>} />
+          <Route path="Register" element={<LoginForm setUsername={setUsername}/>} />
           <Route
             path="Product"
             element={

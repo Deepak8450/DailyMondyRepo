@@ -1,5 +1,6 @@
 .mycart-container {
-    width: 90%;
+    width: fit-content;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
     background: #f9f9f9;

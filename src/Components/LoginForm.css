@@ -102,14 +102,16 @@ form h2{
 }
 .form-container span{
     position: absolute;
-    top: 50px;
+    top: -60px;
+    left: 200px;
     padding: 20px;
     color: #eee;
+    z-index: 3;
     background: rgb(0, 167, 0);
 }
 @media only screen and (max-width: 405px){
     .form-container{
-        transform: translate(10px,0%);
+        transform: translate(245px,0%);
     }
     .poster{ width: 275px;padding: 23px;}
 
@@ -129,7 +131,7 @@ form h2{
 }
 @media only screen and (min-width: 407px){
     .form-container{
-        transform: translate(47px,0%);
+        transform: translate(267px,0%);
     }
     .form-elements input{
       margin-right: 10px;

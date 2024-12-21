@@ -8,6 +8,19 @@ export default function MyCart({ cart }) {
     0
   );
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const name = formData.get("name"); // Extract the username from the form
+
+
+    formData.append("access_key", "194686d3-4360-446e-bfc9-a7cbe39356e1");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+  };
   return (
     <div className="mycart-container">
       <h1 className="mycart-header">MyCart</h1>
@@ -33,7 +46,7 @@ export default function MyCart({ cart }) {
   <h3>Cart Summary</h3>
   {cart.map((item, index) => (
     <div key={index} className="summary-item">
-      
+      <form onSubmit={onSubmit}>
       <input type="hidden" name="access_key" value="194686d3-4360-446e-bfc9-a7cbe39356e1" />
       <input type="text" value={item.name} name="Items" className="readonly-item-name" />
       <input
@@ -43,6 +56,9 @@ export default function MyCart({ cart }) {
         name="Quantity"
         className="readonly-input"
       />
+      <input type="text" readOnly name="Total Amount" value={totalAmount} />
+      <button type="submit" className="save-btn">Shop Now</button>
+      </form>
     </div>
   ))}
 
@@ -63,7 +79,6 @@ export default function MyCart({ cart }) {
     />
   </div>
 </div>
-
     </div>
   );
 }
