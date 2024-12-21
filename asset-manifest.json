@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DailyMondyRepo/static/css/main.3c705183.css",
+    "main.css": "/DailyMondyRepo/static/css/main.e133610e.css",
     "main.js": "/DailyMondyRepo/static/js/main.04ff586d.js",
     "static/media/tomato.jfif": "/DailyMondyRepo/static/media/tomato.939620a50396a9e51a19.jfif",
     "static/media/heroImg.jfif": "/DailyMondyRepo/static/media/heroImg.10c20cd50871ec86235d.jfif",
@@ -13,11 +13,11 @@
     "static/media/Lehsun.jfif": "/DailyMondyRepo/static/media/Lehsun.351ea4e50f80218423a9.jfif",
     "static/media/login-imgc.webp": "/DailyMondyRepo/static/media/login-imgc.3bf9cbd111a420f8618a.webp",
     "index.html": "/DailyMondyRepo/index.html",
-    "main.3c705183.css.map": "/DailyMondyRepo/static/css/main.3c705183.css.map",
+    "main.e133610e.css.map": "/DailyMondyRepo/static/css/main.e133610e.css.map",
     "main.04ff586d.js.map": "/DailyMondyRepo/static/js/main.04ff586d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c705183.css",
+    "static/css/main.e133610e.css",
     "static/js/main.04ff586d.js"
   ]
 }
