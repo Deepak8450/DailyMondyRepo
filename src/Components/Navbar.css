@@ -161,7 +161,7 @@ nav span{
         top: 52px;
         background: #232329;
         color: aliceblue;
-        z-index: 3;
+        z-index: 6;
         transform: translateX(-360px);
         transition: transform .4s ease-in-out; 
     }
@@ -171,6 +171,7 @@ nav span{
     }
     #Register{
         border: none;
+        background: none;
     }
     .menu-items li a{
         color: #eee;
