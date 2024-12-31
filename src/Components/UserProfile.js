@@ -29,6 +29,7 @@ export default function UserProfile({ username,cart }) {
     <div className="user-profile">
       <div className="profile-header">
         <h1>Hello {username}</h1>
+
       </div>
 
       <div className="profile-section">
