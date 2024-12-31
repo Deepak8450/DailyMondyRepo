@@ -116,7 +116,7 @@ nav span{
     transform: translateY(-500px);
 }
 input[type="checkbox"]:checked ~ .drop-down-menu{
-  transform: translateX(0px);
+  transform: translateY(-60px);
   transition: transform .5s ease-in-out;
 }
 #Profile{

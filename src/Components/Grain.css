@@ -56,7 +56,7 @@
     color: #fff;
     cursor: pointer;
   }
-  @media only screen and (min-width:250px) and (max-width: 1303px){
+  @media only screen and (min-width:250px) and (max-width: 1403px){
     .grain-container {
     padding: 20px;
     font-family: 'Roboto';
