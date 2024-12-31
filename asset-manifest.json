@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DailyMondyRepo/static/css/main.0457d83b.css",
-    "main.js": "/DailyMondyRepo/static/js/main.5926730a.js",
+    "main.css": "/DailyMondyRepo/static/css/main.ec6720ec.css",
+    "main.js": "/DailyMondyRepo/static/js/main.f4e28793.js",
     "static/media/Wheat.jpg": "/DailyMondyRepo/static/media/Wheat.1a68394a826c84f80029.jpg",
     "static/media/rice.jpg": "/DailyMondyRepo/static/media/rice.caf6ac8bb6564dc41c86.jpg",
     "static/media/rice2.jpg": "/DailyMondyRepo/static/media/rice2.4a16872e826451da174b.jpg",
@@ -21,11 +21,11 @@
     "static/media/Dm-logo2.jpeg": "/DailyMondyRepo/static/media/Dm-logo2.95780b8778ca2ed8df92.jpeg",
     "static/media/login-imgc.webp": "/DailyMondyRepo/static/media/login-imgc.3bf9cbd111a420f8618a.webp",
     "index.html": "/DailyMondyRepo/index.html",
-    "main.0457d83b.css.map": "/DailyMondyRepo/static/css/main.0457d83b.css.map",
-    "main.5926730a.js.map": "/DailyMondyRepo/static/js/main.5926730a.js.map"
+    "main.ec6720ec.css.map": "/DailyMondyRepo/static/css/main.ec6720ec.css.map",
+    "main.f4e28793.js.map": "/DailyMondyRepo/static/js/main.f4e28793.js.map"
   },
   "entrypoints": [
-    "static/css/main.0457d83b.css",
-    "static/js/main.5926730a.js"
+    "static/css/main.ec6720ec.css",
+    "static/js/main.f4e28793.js"
   ]
 }
