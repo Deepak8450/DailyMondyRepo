@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import Dmlogo from "./productImg/Dm-logo2.jpeg";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ username }) {
@@ -10,9 +11,10 @@ export default function Navbar({ username }) {
   return (
     <div className="header">
       <nav>
-        <span>
-          <i className="fa-solid fa-cart-shopping"></i>DailyMondy
-        </span>
+        <div className="logo">
+          <img src={Dmlogo} className="dm-logo"/>
+          <span id="logo-name">DailyMandi</span>
+        </div>
       </nav>
       <div className="services">
         {/* Conditionally render Register or Profile */}
@@ -31,9 +33,17 @@ export default function Navbar({ username }) {
         )}
 
         <li>
-          <Link to="/Product">
-            <span>Vegetables</span>
-          </Link>
+          
+          <div className="drop-down">
+            <span className="drop-down-btn">Catigories</span>
+            <input type="checkbox" id="catigory-checked"/>
+            <div className="drop-down-menu">
+               <ul>
+                <li><Link to="/Grain">Our Products</Link></li>
+                <li><Link to="/Vegetables">Vegetables</Link></li>
+               </ul>
+            </div>
+          </div>
         </li>
         <li>
           <Link to="/MyCart">
@@ -71,8 +81,13 @@ export default function Navbar({ username }) {
             </button>
           </li>
           <li>
-            <Link to="/Product">
+            <Link to="/Vegetables">
               <span>Vegetables</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Grain">
+              <span>Product</span>
             </Link>
           </li>
           <li>

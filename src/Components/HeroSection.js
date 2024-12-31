@@ -14,6 +14,10 @@ export default function HeroSection() {
                 <button id='readmore'>Read More</button>
                </div>
               </div>
+              <div className='read-more'>
+                <h1 id='title'>Welcome To our Daily-Mandi</h1>
+                <p className='description'>At Daily Mandi, we are committed to bringing you the finest selection of grains and the freshest Vegetables directly from local farmers. Our mission is to support sustainable agriculture and provide our customers with nutritious, high-quality produce. Whether you're looking for staple grains like <b>Rice ,Wheat</b> and seasonal Vegetables, we ensure that every products meets our stringent quality standards.</p>
+              </div>
     </div>
     
   )

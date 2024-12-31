@@ -11,7 +11,7 @@
 }
 nav{
     width: 100%;
-    height: 25px;
+    height: 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +19,23 @@ nav{
     align-items: center;
     z-index: 5;
     background: rgb(26, 24, 27);
+}
+.logo{
+    width: 170px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo-name{
+    font-size: 16px;
+    transform: translateX(-30px); 
+}
+.dm-logo{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    
 }
 nav span{
     color: #eee;
@@ -42,7 +59,7 @@ nav span{
     padding-right: 30px;
     background:rgb(33 33 37);
      position: fixed;
-     top: 24px;
+     top: 40px;
      left: 0;
      z-index: 5;
 }
@@ -55,6 +72,52 @@ nav span{
 .services li a{
     text-decoration: none;
     color: #eee;
+}
+.drop-down{
+    width: 175px;
+    height:200px;
+    transform: translateY(90px);
+    display: inline-grid;
+    justify-items: center;
+}
+
+.drop-down ul{
+    width: 100%;
+    height: 145px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid rgb(83 83 83);
+    background: rgb(63, 62, 62);
+    color: #eee;
+    box-shadow:8px 3px 17px 1px #232323;
+    font-size: 13px;
+}
+#catigory-checked{
+    width: 85px;
+    height:27px;
+    border: 2px solid rgb(255, 65, 65);
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    opacity: 0;
+    cursor: pointer;
+}
+.drop-down-btn{
+    width: 100px;
+    height: 20px;
+    border: none;
+    color: #eee;
+    font-size: 17px;
+    background: none;
+}
+.drop-down-menu{
+    transform: translateY(-500px);
+}
+input[type="checkbox"]:checked ~ .drop-down-menu{
+  transform: translateX(0px);
+  transition: transform .5s ease-in-out;
 }
 #Profile{
     width: fit-content;
@@ -112,9 +175,11 @@ nav span{
         font-weight: 400;
     }
 }
+
 @media only screen and (max-width: 555px)and (min-width: 305px){
     .services li{ display: none;
     }
+    
     .hamburger{
         display: flex;
         flex-direction: column;
@@ -129,8 +194,8 @@ nav span{
         align-items: center;
         width: 31px;
         height: 32px;
-        position: absolute;
-        top: 21px;
+        position: fixed;
+        top: 37px;
         left: 5px;
         z-index: 5;
     }
@@ -158,7 +223,7 @@ nav span{
         align-items: center;
         position: relative;
         left: 0px;
-        top: 52px;
+        top: 71px;
         background: #232329;
         color: aliceblue;
         z-index: 6;

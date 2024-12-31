@@ -1,7 +1,7 @@
 import React from "react";
 import "./MyCart.css";
 
-export default function MyCart({ cart }) {
+export default function MyCart({ cart,grains }) {
     const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); 
     const totalAmount = cart.reduce(
     (total, item) => total + item.quantity * item.price,
@@ -30,7 +30,7 @@ export default function MyCart({ cart }) {
         <div className="cart-items">
           {cart.map((item, index) => (
             <div key={index} className="cart-item">
-              <img src={item.img} alt={item.name} className="cart-item-img" />
+              <img src={item.img||item.image} alt={item.name} className="cart-item-img" />
               <div className="cart-item-details">
                 <h3>{item.name}</h3>
                 <p>Quantity: {item.quantity}</p>
