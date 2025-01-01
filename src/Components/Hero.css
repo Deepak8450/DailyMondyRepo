@@ -61,7 +61,7 @@ div{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    transform: translate(30%,50%);
+    transform: translate(30%,5%);
     text-align: center;
 }
 #title{
@@ -83,12 +83,25 @@ div{
     line-height: 30px;
     text-align: left;
 }
+.addvertisement{
+    width: 640px;
+    height: 340px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    transform: translate(100px,-100px);
+}
+video{
+    width: 100%;
+    height: 100%;
+}
 @media only screen and (min-width:250px) and (max-width: 600px){
     .hero-page{
         width: 100em;
         overflow-y: hidden;
         left: 0;
-        
     }
     .hero-heading::before{
         width: 100em;
@@ -97,6 +110,9 @@ div{
         width: 100%;
         height: 800px;
         margin-left: 10px;
+    }
+    .addvertisement{
+        transform: translate(200px,500px);
     }
 }
 @media only screen and (min-width:603px) and (max-width: 1200px){

@@ -18,7 +18,7 @@ nav{
     display: flex;
     align-items: center;
     z-index: 5;
-    background: rgb(26, 24, 27);
+    background: rgb(36 36 37);
 }
 .logo{
     width: 170px;
@@ -29,6 +29,7 @@ nav{
 }
 #logo-name{
     font-size: 16px;
+    font-family: "Quicksand", serif;
     transform: translateX(-30px); 
 }
 .dm-logo{
@@ -57,7 +58,7 @@ nav span{
     align-items: center;
     padding-left: 60px;
     padding-right: 30px;
-    background:rgb(33 33 37);
+    background:rgb(27 27 35);
      position: fixed;
      top: 40px;
      left: 0;
@@ -151,6 +152,11 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
     .services{
         display: flex;
         justify-content: center;
+    }
+    #logo-name{
+        font-size: 17px;
+        font-family: "Quicksand", serif;
+        transform: translateX(-10px); 
     }
     .services li span{
       font-size: 11px;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import Dmlogo from "./productImg/Dm-logo2.jpeg";
+import Dmlogo from "./productImg/Dm-logo3.jpg";
 import { Link } from "react-router-dom";
 
 export default function Navbar({ username }) {
