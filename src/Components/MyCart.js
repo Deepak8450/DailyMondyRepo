@@ -1,24 +1,27 @@
 import React from "react";
 import "./MyCart.css";
 
-export default function MyCart({ cart, grains }) {
+export default function MyCart({ cart, grains ,username}) {
   const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
   const totalAmount = cart.reduce(
     (total, item) => total + item.quantity * item.price,
     0
   );
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const name = formData.get("name"); // Extract the username from the form
-
+    if(username){
     formData.append("access_key", "194686d3-4360-446e-bfc9-a7cbe39356e1");
-
+     window.alert("Your Order Sent Successfully..")
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
     });
+  }
+  else{
+    window.alert("You need to Register first !")
+  }
   };
   return (
     <main>

@@ -21,7 +21,7 @@ export default function LoginForm({ setUsername }) {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Order Send Successfully..");
+      setResult("Registration Successfully..");
       setUsername(name); // Update username in App.js
       event.target.reset();
     } else {

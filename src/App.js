@@ -202,7 +202,7 @@ function App() {
           />
           <Route path="Grain" element={<Grain grains={grainData} incrementGrainQuantity={incrementGrainQuantity} decrementGrainQuantity={decrementGrainQuantity} handleBuyGrain={handleBuyGrain}/>}
          />
-          <Route path="MyCart" element={<MyCart cart={cart} grains={grainData}/>} />
+          <Route path="MyCart" element={<MyCart cart={cart} grains={grainData} username={username}/>} />
         </Routes>
         <Futter />
       </Router>
