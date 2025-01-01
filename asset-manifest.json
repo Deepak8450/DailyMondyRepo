@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/DailyMondyRepo/static/css/main.ec6720ec.css",
-    "main.js": "/DailyMondyRepo/static/js/main.f4e28793.js",
+    "main.css": "/DailyMondyRepo/static/css/main.d5c2c693.css",
+    "main.js": "/DailyMondyRepo/static/js/main.8e0f4857.js",
+    "static/media/Advertise.mp4": "/DailyMondyRepo/static/media/Advertise.a95a2a74650356c276c6.mp4",
     "static/media/Wheat.jpg": "/DailyMondyRepo/static/media/Wheat.1a68394a826c84f80029.jpg",
     "static/media/rice.jpg": "/DailyMondyRepo/static/media/rice.caf6ac8bb6564dc41c86.jpg",
     "static/media/rice2.jpg": "/DailyMondyRepo/static/media/rice2.4a16872e826451da174b.jpg",
@@ -13,19 +14,19 @@
     "static/media/Rahar.jpeg": "/DailyMondyRepo/static/media/Rahar.7be715ec160ba48ff139.jpeg",
     "static/media/Urad.jpeg": "/DailyMondyRepo/static/media/Urad.1bdc3ba8cece7ae8db04.jpeg",
     "static/media/onion.jfif": "/DailyMondyRepo/static/media/onion.8b1e0c7a8b0c4b6eaea7.jfif",
+    "static/media/Dm-logo3.jpg": "/DailyMondyRepo/static/media/Dm-logo3.c75253d7c60f316905fa.jpg",
     "static/media/potato.jfif": "/DailyMondyRepo/static/media/potato.111a04e1d184d8836313.jfif",
     "static/media/Peas.jfif": "/DailyMondyRepo/static/media/Peas.ffa6e59041bce3711adf.jfif",
     "static/media/greenCapsicum.jfif": "/DailyMondyRepo/static/media/greenCapsicum.80c63d3c59668a22f783.jfif",
     "static/media/Capsicum.jfif": "/DailyMondyRepo/static/media/Capsicum.1746a9cf5310b798ecae.jfif",
     "static/media/Lehsun.jfif": "/DailyMondyRepo/static/media/Lehsun.351ea4e50f80218423a9.jfif",
-    "static/media/Dm-logo2.jpeg": "/DailyMondyRepo/static/media/Dm-logo2.95780b8778ca2ed8df92.jpeg",
     "static/media/login-imgc.webp": "/DailyMondyRepo/static/media/login-imgc.3bf9cbd111a420f8618a.webp",
     "index.html": "/DailyMondyRepo/index.html",
-    "main.ec6720ec.css.map": "/DailyMondyRepo/static/css/main.ec6720ec.css.map",
-    "main.f4e28793.js.map": "/DailyMondyRepo/static/js/main.f4e28793.js.map"
+    "main.d5c2c693.css.map": "/DailyMondyRepo/static/css/main.d5c2c693.css.map",
+    "main.8e0f4857.js.map": "/DailyMondyRepo/static/js/main.8e0f4857.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec6720ec.css",
-    "static/js/main.f4e28793.js"
+    "static/css/main.d5c2c693.css",
+    "static/js/main.8e0f4857.js"
   ]
 }
