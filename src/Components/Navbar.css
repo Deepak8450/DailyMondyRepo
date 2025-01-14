@@ -18,7 +18,7 @@ nav{
     display: flex;
     align-items: center;
     z-index: 5;
-    background: rgb(36 36 37);
+    background: rgb(37 33 34);
 }
 .logo{
     width: 170px;
@@ -28,6 +28,7 @@ nav{
     justify-content: space-evenly;
 }
 #logo-name{
+    color: #ffff;
     font-size: 16px;
     font-family: "Quicksand", serif;
     transform: translateX(-30px); 
@@ -67,13 +68,14 @@ nav span{
 .services li{
     list-style: none;
     margin-right: 55px;
-    color: #eee;
+    color: #ffff;
     display: inline-block;
 }
 .services li a{
     text-decoration: none;
-    color: #eee;
+    color: #f0b802;
 }
+
 .drop-down{
     width: 175px;
     height:200px;
@@ -91,14 +93,13 @@ nav span{
     justify-content: space-around;
     border: 2px solid rgb(83 83 83);
     background: rgb(63, 62, 62);
-    color: #eee;
+    color: #f0b802;
     box-shadow:8px 3px 17px 1px #232323;
     font-size: 13px;
 }
 #catigory-checked{
     width: 85px;
     height:27px;
-    border: 2px solid rgb(255, 65, 65);
     position: absolute;
     top: -5px;
     left: 40px;
@@ -109,7 +110,7 @@ nav span{
     width: 100px;
     height: 20px;
     border: none;
-    color: #eee;
+    color: #f0b802;
     font-size: 17px;
     background: none;
 }
@@ -129,7 +130,7 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
 #Register{
     width: 100px;
     height: 28px;
-    border: 1px solid #eee;
+    border: 1px solid #f0b802;
     font-size: 13px;
     font-weight: 600;
     border-radius: 15px;
@@ -137,7 +138,7 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
 }
 #Register a{
     text-decoration: none;
-    color: #eee;
+    color: #dfdcdc;
 }
 #Register a:hover{
     background: #eee;
@@ -248,7 +249,7 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
     .menu-items li a{
         color: #eee;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 28px;
     }
     .hamburger input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(0px);

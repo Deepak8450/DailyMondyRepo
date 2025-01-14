@@ -85,11 +85,15 @@ function App() {
     i === index  ? {...grain, quantity: grain.quantity +1} : grain );
     setGrainData(updatedGrains);
     };
-    const decrementGrainQuantity =(index)=>{
-      const updatedGrains = grainData.map((grain, i)=>
-        i=== index ? {...grain, quantity: grain.quantity -1} : grain );
+    const decrementGrainQuantity = (index) => {
+      const updatedGrains = grainData.map((grain, i) =>
+        i === index && grain.quantity > 0 // Only decrement if quantity is greater than 0
+          ? { ...grain, quantity: grain.quantity - 1 }
+          : grain
+      );
       setGrainData(updatedGrains);
     };
+    
 
 // function perform
   

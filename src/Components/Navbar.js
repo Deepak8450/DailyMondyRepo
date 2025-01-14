@@ -75,10 +75,15 @@ export default function Navbar({ username }) {
           <span id="line3"></span>
         </div>
         <div className="menu-items">
-          <li>
-            <button id="Register">
-              <Link to="/Register">Register</Link>
-            </button>
+        <li>
+            <Link to="/DailyMondyRepo">
+              <span>Home</span>
+            </Link>
+          </li>
+         <li>
+            <Link to="/Grain">
+              <span>Product</span>
+            </Link>
           </li>
           <li>
             <Link to="/Vegetables">
@@ -86,10 +91,12 @@ export default function Navbar({ username }) {
             </Link>
           </li>
           <li>
-            <Link to="/Grain">
-              <span>Product</span>
-            </Link>
+            <button id="Register">
+              <Link to="/Register">Register</Link>
+            </button>
           </li>
+          
+        
           <li>
             <Link to="/MyCart">
               <span>MyCart</span>
