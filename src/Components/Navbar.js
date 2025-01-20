@@ -25,11 +25,6 @@ export default function Navbar({ username }) {
         </div>
       </nav>
       <div className="services">
-      <li>
-          <Link to="/DailyMondyRepo">
-            <span>Home</span>
-          </Link>
-        </li>
         {/* Conditionally render Register or Profile */}
         {user ? (
           
