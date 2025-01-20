@@ -190,7 +190,7 @@ function App() {
         <Navbar username={username}/>
     
         <Routes>
-        <Route path="/" element={<HeroSection/>} />
+        <Route path="DailyMondyRepo" element={<HeroSection/>} />
         <Route path="Profile" element={<UserProfile username={username} cart={cart}/>} />
           <Route path="Register" element={<LoginForm setUsername={setUsername}/>} />
           <Route
