@@ -25,21 +25,33 @@ export default function Navbar({ username }) {
         </div>
       </nav>
       <div className="services">
+      <li>
+          <Link to="/DailyMondyRepo">
+            <span>Home</span>
+          </Link>
+        </li>
         {/* Conditionally render Register or Profile */}
         {user ? (
+          
           <li>
             <button id="Profile">
               <Link to="/Profile">{username}</Link>
             </button>
           </li>
+          
         ) : (
+          
           <li>
             <button id="Register">
               <Link to="/Register">Register</Link>
             </button>
           </li>
         )}
-
+         <li>
+          <Link to="/DailyMondyRepo">
+            <span>Home</span>
+          </Link>
+        </li>
         <li>
           
           <div className="drop-down">
@@ -121,5 +133,6 @@ export default function Navbar({ username }) {
         </div>
       </div>
     </div>
+    
   );
 }

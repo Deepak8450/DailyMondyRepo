@@ -128,7 +128,7 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
     background: rgb(27, 27, 27);
 }
 #Register{
-    width: 100px;
+    width: 68px;
     height: 28px;
     border: 1px solid #f0b802;
     font-size: 13px;
@@ -187,7 +187,7 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
    
 }
 
-@media only screen and (max-width: 555px)and (min-width: 305px){
+@media only screen and (max-width: 648px)and (min-width: 305px){
     .services li{ display: none;
     }
     
