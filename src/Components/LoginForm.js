@@ -1,16 +1,19 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./LoginForm.css";
 import Capsimg from "./productImg/login-imgc.webp";
 
 export default function LoginForm({ setUsername }) {
   const [result, setResult] = useState("");
   const [animate, setAnimate] = useState(false);
+  const navigate = useNavigate(); // Initialize the navigate hook
 
   const handleClick = () => {
     setAnimate(true);
     // Reset animation after it's complete (400ms matches the CSS transition)
     setTimeout(() => setAnimate(false), 400);
   };
+
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -31,7 +34,11 @@ export default function LoginForm({ setUsername }) {
       setUsername(name); // Update username in App.js
       event.target.reset();
       handleClick();
-      
+
+      // Redirect to the home page after a delay (optional for UX)
+      setTimeout(() => {
+        navigate("/"); // Redirect to the home page
+      }, 1000); // Adjust delay as needed
     } else {
       console.log("Something went wrong", data);
       setResult(data.message);
@@ -52,7 +59,11 @@ export default function LoginForm({ setUsername }) {
       <div className="form-elements">
         <form onSubmit={onSubmit}>
           <h2>Sign-up</h2>
-          <input type="hidden" name="access_key" value="194686d3-4360-446e-bfc9-a7cbe39356e1" />
+          <input
+            type="hidden"
+            name="access_key"
+            value="194686d3-4360-446e-bfc9-a7cbe39356e1"
+          />
           <label htmlFor="username">Enter Full-Name</label>
           <input type="text" id="username" name="name" required />
           <label htmlFor="number">Enter Mobile Number</label>
@@ -61,7 +72,15 @@ export default function LoginForm({ setUsername }) {
           <input type="text" id="address" name="Address" required />
           <label htmlFor="famous-loc">Nearest famous shop/mall</label>
           <input type="text" id="famous-loc" name="Location" required />
-          <button type="submit"  className={`save-btn ${animate ? "animate" : ""}`} id="sign-up-btn" onClick={handleClick}>Save<i class="fa-solid fa-person-walking-arrow-right  " ></i></button>
+          <button
+            type="submit"
+            className={`save-btn ${animate ? "animate" : ""}`}
+            id="sign-up-btn"
+            onClick={handleClick}
+          >
+            Save
+            <i className="fa-solid fa-person-walking-arrow-right"></i>
+          </button>
         </form>
       </div>
       {result && <span>{result}</span>} {/* Show result only if it's not empty */}

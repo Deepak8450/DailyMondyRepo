@@ -84,7 +84,7 @@ export default function Navbar({ username }) {
         </div>
         <div className="menu-items">
         <li onClick={handleMenuItemClick}>
-            <Link to="/DailyMondyRepo">
+            <Link to="/">
               <span>Home</span>
             </Link>
           </li>
