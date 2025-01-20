@@ -29,13 +29,13 @@ nav{
 }
 #logo-name{
     color: #ffff;
-    font-size: 16px;
+    font-size: 25px;
     font-family: "Quicksand", serif;
-    transform: translateX(-30px); 
+    transform: translateX(-70px); 
 }
 .dm-logo{
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     
 }
@@ -154,8 +154,11 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
         display: flex;
         justify-content: center;
     }
+    #daily{
+        font-size: 23px;
+    }
     #logo-name{
-        font-size: 17px;
+        font-size: 23px;
         font-family: "Quicksand", serif;
         transform: translateX(-10px); 
     }
@@ -210,8 +213,8 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
     .hamburger input[type="checkbox"]{
         width: 31px;
         height: 27px;
-        position: absolute;
-        top: 24px;
+        position: fixed;
+        top: 40px;
         left: 5px;
         z-index: 7;
         opacity: 0;
@@ -224,12 +227,12 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
     }
     .menu-items{
         width:350px;
-        height: 1200px;
+        height: 635px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        position: relative;
+        position: fixed;
         left: 0px;
         top: 71px;
         background: #232329;

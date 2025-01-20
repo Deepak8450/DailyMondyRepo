@@ -4,7 +4,13 @@ import Capsimg from "./productImg/login-imgc.webp";
 
 export default function LoginForm({ setUsername }) {
   const [result, setResult] = useState("");
+  const [animate, setAnimate] = useState(false);
 
+  const handleClick = () => {
+    setAnimate(true);
+    // Reset animation after it's complete (400ms matches the CSS transition)
+    setTimeout(() => setAnimate(false), 400);
+  };
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -24,6 +30,8 @@ export default function LoginForm({ setUsername }) {
       setResult("Registration Successfully..");
       setUsername(name); // Update username in App.js
       event.target.reset();
+      handleClick();
+      
     } else {
       console.log("Something went wrong", data);
       setResult(data.message);
@@ -53,7 +61,7 @@ export default function LoginForm({ setUsername }) {
           <input type="text" id="address" name="Address" required />
           <label htmlFor="famous-loc">Nearest famous shop/mall</label>
           <input type="text" id="famous-loc" name="Location" required />
-          <button type="submit" className="save-btn">Save</button>
+          <button type="submit"  className={`save-btn ${animate ? "animate" : ""}`} id="sign-up-btn" onClick={handleClick}>Save<i class="fa-solid fa-person-walking-arrow-right  " ></i></button>
         </form>
       </div>
       {result && <span>{result}</span>} {/* Show result only if it's not empty */}
