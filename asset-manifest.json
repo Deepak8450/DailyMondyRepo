@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DailyMondyRepo/static/css/main.623eb71e.css",
-    "main.js": "/DailyMondyRepo/static/js/main.9fb7ae0c.js",
+    "main.css": "/DailyMondyRepo/static/css/main.7bfff183.css",
+    "main.js": "/DailyMondyRepo/static/js/main.b6fbef9f.js",
     "static/media/Advertise.mp4": "/DailyMondyRepo/static/media/Advertise.a95a2a74650356c276c6.mp4",
     "static/media/Wheat.jpg": "/DailyMondyRepo/static/media/Wheat.1a68394a826c84f80029.jpg",
     "static/media/rice.jpg": "/DailyMondyRepo/static/media/rice.caf6ac8bb6564dc41c86.jpg",
@@ -14,19 +14,19 @@
     "static/media/Rahar.jpeg": "/DailyMondyRepo/static/media/Rahar.7be715ec160ba48ff139.jpeg",
     "static/media/Urad.jpeg": "/DailyMondyRepo/static/media/Urad.1bdc3ba8cece7ae8db04.jpeg",
     "static/media/onion.jfif": "/DailyMondyRepo/static/media/onion.8b1e0c7a8b0c4b6eaea7.jfif",
-    "static/media/Dm-logo3.jpg": "/DailyMondyRepo/static/media/Dm-logo3.c75253d7c60f316905fa.jpg",
     "static/media/potato.jfif": "/DailyMondyRepo/static/media/potato.111a04e1d184d8836313.jfif",
     "static/media/Peas.jfif": "/DailyMondyRepo/static/media/Peas.ffa6e59041bce3711adf.jfif",
     "static/media/greenCapsicum.jfif": "/DailyMondyRepo/static/media/greenCapsicum.80c63d3c59668a22f783.jfif",
     "static/media/Capsicum.jfif": "/DailyMondyRepo/static/media/Capsicum.1746a9cf5310b798ecae.jfif",
     "static/media/Lehsun.jfif": "/DailyMondyRepo/static/media/Lehsun.351ea4e50f80218423a9.jfif",
+    "static/media/pixelcut-export.png": "/DailyMondyRepo/static/media/pixelcut-export.7bda34b5115f2009fe2e.png",
     "static/media/login-imgc.webp": "/DailyMondyRepo/static/media/login-imgc.3bf9cbd111a420f8618a.webp",
     "index.html": "/DailyMondyRepo/index.html",
-    "main.623eb71e.css.map": "/DailyMondyRepo/static/css/main.623eb71e.css.map",
-    "main.9fb7ae0c.js.map": "/DailyMondyRepo/static/js/main.9fb7ae0c.js.map"
+    "main.7bfff183.css.map": "/DailyMondyRepo/static/css/main.7bfff183.css.map",
+    "main.b6fbef9f.js.map": "/DailyMondyRepo/static/js/main.b6fbef9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.623eb71e.css",
-    "static/js/main.9fb7ae0c.js"
+    "static/css/main.7bfff183.css",
+    "static/js/main.b6fbef9f.js"
   ]
 }
