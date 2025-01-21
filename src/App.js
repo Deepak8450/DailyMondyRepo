@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import ProductList from "./Components/ProductList";
 import LoginForm from "./Components/LoginForm";
@@ -26,10 +26,11 @@ import Futter from "./Components/Futter";
 import HeroSection from "./Components/HeroSection";
 import UserProfile from "./Components/UserProfile";
 import Grain from "./Components/Grain";
-{/*Grain pictures import */};
+// Grain pictures import
+
 function App() {
   // grain data
-  const [grainData, setGrainData] = useState( [
+  const [grainData, setGrainData] = useState([
     {
       name: "Rice",
       price: 40,
@@ -77,26 +78,25 @@ function App() {
       price: 70,
       image: Chana,
       quantity: 5
-    },
+    }
   ]);
 
-  const incrementGrainQuantity =(index) =>{
-    const updatedGrains = grainData.map((grain, i)=>
-    i === index  ? {...grain, quantity: grain.quantity +1} : grain );
+  const incrementGrainQuantity = (index) => {
+    const updatedGrains = grainData.map((grain, i) =>
+      i === index ? { ...grain, quantity: grain.quantity + 1 } : grain
+    );
     setGrainData(updatedGrains);
-    };
-    const decrementGrainQuantity = (index) => {
-      const updatedGrains = grainData.map((grain, i) =>
-        i === index && grain.quantity > 0 // Only decrement if quantity is greater than 0
-          ? { ...grain, quantity: grain.quantity - 1 }
-          : grain
-      );
-      setGrainData(updatedGrains);
-    };
-    
+  };
 
-// function perform
-  
+  const decrementGrainQuantity = (index) => {
+    const updatedGrains = grainData.map((grain, i) =>
+      i === index && grain.quantity > 0
+        ? { ...grain, quantity: grain.quantity - 1 }
+        : grain
+    );
+    setGrainData(updatedGrains);
+  };
+
   const [username, setUsername] = useState(null);
   const initialProductList = [
     { img: tomatoImg, price: 40, name: "Tomato", quantity: 0 },
@@ -106,11 +106,10 @@ function App() {
     { img: potatoImg, price: 40, name: "Potato", quantity: 0 },
     { img: greenCapsicumImg, price: 80, name: "Capsicum", quantity: 0 },
     { img: EggplantsImg, price: 45, name: "Eggplants", quantity: 0 },
-    { img: CapsicumImg, price: 100, name: "Capsicum", quantity: 0 },
+    { img: CapsicumImg, price: 100, name: "Capsicum", quantity: 0 }
   ];
 
   const [productList, setProductList] = useState(initialProductList);
- 
   const [cart, setCart] = useState([]);
   const [budget, setBudget] = useState(1000);
 
@@ -118,9 +117,8 @@ function App() {
     const updatedProductList = [...productList];
     updatedProductList[index].quantity++;
     setProductList(updatedProductList);
-
   };
- 
+
   const decrementQuantity = (index) => {
     const updatedProductList = [...productList];
     if (updatedProductList[index].quantity > 0) {
@@ -171,30 +169,30 @@ function App() {
     const updatedProductList = [...productList];
     updatedProductList[index].quantity = 0;
     setProductList(updatedProductList);
+  };
 
-    };
- const handleBuyGrain = (index) => {
-  const selectedGrain = grainData[index];
-  if(selectedGrain.quantity <5){
-    alert("Minimum Quantity is 5 to proceed with the purchase.");
-    return;
-  }
+  const handleBuyGrain = (index) => {
+    const selectedGrain = grainData[index];
+    if (selectedGrain.quantity < 5) {
+      alert("Minimum Quantity is 5 to proceed with the purchase.");
+      return;
+    }
 
-  setCart((prevCart)=> [...prevCart, selectedGrain]);
-  alert(`${selectedGrain.name} added to your cart!`);
+    setCart((prevCart) => [...prevCart, selectedGrain]);
+    alert(`${selectedGrain.name} added to your cart!`);
+  };
 
- }
   return (
     <>
       <Router>
-        <Navbar username={username}/>
-    
+        <Navbar username={username} />
+
         <Routes>
-        <Route path="DailyMondyRepo" element={<HeroSection/>} />
-        <Route path="Profile" element={<UserProfile username={username} cart={cart}/>} />
-          <Route path="Register" element={<LoginForm setUsername={setUsername}/>} />
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/Profile" element={<UserProfile username={username} cart={cart} />} />
+          <Route path="/Register" element={<LoginForm setUsername={setUsername} />} />
           <Route
-            path="Vegetables"
+            path="/Vegetables"
             element={
               <ProductList
                 productList={productList}
@@ -204,13 +202,24 @@ function App() {
               />
             }
           />
-          <Route path="Grain" element={<Grain grains={grainData} incrementGrainQuantity={incrementGrainQuantity} decrementGrainQuantity={decrementGrainQuantity} handleBuyGrain={handleBuyGrain}/>}
-         />
-          <Route path="MyCart" element={<MyCart cart={cart} grains={grainData} username={username}/>} />
+          <Route
+            path="/Grain"
+            element={
+              <Grain
+                grains={grainData}
+                incrementGrainQuantity={incrementGrainQuantity}
+                decrementGrainQuantity={decrementGrainQuantity}
+                handleBuyGrain={handleBuyGrain}
+              />
+            }
+          />
+          <Route path="/MyCart" element={<MyCart cart={cart} grains={grainData} username={username} />} />
         </Routes>
+
         <Futter />
       </Router>
     </>
   );
-};
+}
+
 export default App;

@@ -10,8 +10,15 @@ export default function Product({
 
 {
   return (    
-    <section className="text-gray-400 bg-gray-900 body-font overflow-hidden shadow-lg">
-      <div className="container px-5 py-24 mx-auto">
+    <section className="text-gray-400 bg-gray-800 body-font overflow-hidden shadow-lg">
+      <div className="container px-5 py-24 mx-auto border-0 rounded-lg bg-gray-900"
+       style={{
+              marginTop: '60px',
+              '@media (min-width: 406px)': {
+                marginTop: '0px',
+              },
+            }}
+      >
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           {/* Image */}
           <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-full object-cover object-center rounded" src={product.img} />
@@ -58,7 +65,7 @@ export default function Product({
             </div>
           </div>
         </div>
-      </div><hr></hr>
+      </div>
     </section>
     
   );

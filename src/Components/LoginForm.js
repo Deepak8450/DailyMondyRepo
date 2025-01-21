@@ -65,13 +65,13 @@ export default function LoginForm({ setUsername }) {
             value="194686d3-4360-446e-bfc9-a7cbe39356e1"
           />
           <label htmlFor="username">Enter Full-Name</label>
-          <input type="text" id="username" name="name" required />
+          <input type="text" id="username" name="name" placeholder="Your full-name" required />
           <label htmlFor="number">Enter Mobile Number</label>
-          <input type="text" id="number" name="Number" required />
+          <input type="text" id="number" name="Number" placeholder="Contact number.." required />
           <label htmlFor="address">Enter your Address</label>
-          <input type="text" id="address" name="Address" required />
+          <input type="text" id="address" name="Address" placeholder="your address.." required />
           <label htmlFor="famous-loc">Nearest famous shop/mall</label>
-          <input type="text" id="famous-loc" name="Location" required />
+          <input type="text" id="famous-loc" name="Location" placeholder="Nearest famous shop/mall" required />
           <button
             type="submit"
             className={`save-btn ${animate ? "animate" : ""}`}
