@@ -231,10 +231,11 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: left;
         position: fixed;
         left: 0px;
         top: 71px;
+        padding-left: 45px;
         background: #232329;
         color: aliceblue;
         z-index: 6;
@@ -253,6 +254,12 @@ input[type="checkbox"]:checked ~ .drop-down-menu{
         color: #eee;
         text-decoration: none;
         font-size: 28px;
+        padding: 5px 55px 5px 55px;
+    }
+    .menu-items li a:hover{
+        padding: 5px 55px 5px 55px;
+        border: 1.5px solid white;
+        border-radius: 5px;
     }
     .hamburger input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(0px);

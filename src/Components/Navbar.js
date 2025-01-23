@@ -43,7 +43,7 @@ export default function Navbar({ username }) {
           </li>
         )}
          <li>
-          <Link to="/DailyMondyRepo">
+          <Link to="/home">
             <span>Home</span>
           </Link>
         </li>
@@ -91,7 +91,7 @@ export default function Navbar({ username }) {
         </div>
         <div className="menu-items">
         <li onClick={handleMenuItemClick}>
-            <Link to="/DailyMondyRepo">
+            <Link to="/home">
               <span>Home</span>
             </Link>
           </li>

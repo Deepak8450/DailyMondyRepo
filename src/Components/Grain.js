@@ -22,11 +22,11 @@ export default function Grain({
             }}
             key={index}
           >
-            <div className="lg:w-4/5 mx-auto flex flex-wrap">
+            <div className="lg:w-4/5 mx-auto flex flex-wrap overflow-hidden">
               {/* Image */}
               <img
                 alt="ecommerce"
-                className="lg:w-1/2 w-full lg:h-auto h-full object-cover object-center rounded"
+                className="lg:w-1/2 w-full lg:h-auto h-full object-cover object-center rounded hover:scale-105 duration-1000"
                 src={grain.image}
               />
 
