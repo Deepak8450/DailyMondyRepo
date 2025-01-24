@@ -3,11 +3,12 @@ import add from "./productImg/Advertise.mp4";
 import heroImg from "./productImg/heroImg.jfif";
 import Futter from "./Futter";
 import {Link} from "react-router-dom";
+import "./HeroSection.css";
 
 export default function HeroSection() {
   return (
     <div>
-      <section className="text-gray-400 bg-gray-900 body-font">
+      <section className="text-gray-400 bg-gray-900 body-font ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -24,13 +25,16 @@ export default function HeroSection() {
               </button>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={heroImg}
-            />
-          </div>
+          <div id="container" className=" bg-white lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[350px]">
+  <div
+    className=" inset-0 object-cover object-center rounded z-10"
+    id="hero1"
+  />
+
+
+</div>
+
+
         </div>
       </section>
       <hr />
@@ -55,7 +59,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap -m-4">
             
             <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
+              <div className="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
                 <span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
                   POPULAR
                 </span>
@@ -152,7 +156,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
                 <h2 className="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
                   BUSINESS
                 </h2>
@@ -262,7 +266,7 @@ export default function HeroSection() {
               </div>
             </div>
             <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
                 <h2 className="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
                   SPECIAL
                 </h2>

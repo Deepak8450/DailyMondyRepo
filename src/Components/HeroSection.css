@@ -1,0 +1,26 @@
+#container{
+    overflow: hidden;
+    max-width: 1200px;
+    background-image: url('./productImg/heroImg.jfif');
+    animation:zoom-out 20s linear infinite ;
+    background-size: 100% 100%;
+    object-fit: cover;
+background-repeat: no-repeat;
+}
+#hero1{
+width: 100%;
+height: 100%;
+aspect-ratio: 3/2;
+
+}
+
+@keyframes zoom-out{
+ 0%{
+     background-image: url('./productImg/hero1.webp');
+ }
+ 25%{background-image: url('./productImg/hero2.jpg');}
+ 50%{background-image: url('./productImg/hero3.jfif');}
+ 75%{background-image: url('./productImg/hero4.jfif');}
+ 100%{background-image: url('./productImg/heroImg.jfif');}
+}
+
