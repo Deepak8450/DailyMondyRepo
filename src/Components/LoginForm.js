@@ -37,7 +37,7 @@ export default function LoginForm({ setUsername }) {
 
       // Redirect to the home page after a delay (optional for UX)
       setTimeout(() => {
-        navigate("/home"); // Redirect to the home page
+        navigate("/verification"); // Redirect to the home page
       }, 1000); // Adjust delay as needed
     } else {
       console.log("Something went wrong", data);

@@ -26,12 +26,12 @@ export default function Grain({
               {/* Image */}
               <img
                 alt="ecommerce"
-                className="lg:w-1/2 w-full lg:h-auto h-full object-cover object-center rounded hover:scale-105 duration-1000"
+                className=" lg:w-1/2 w-full lg:h-auto h-full object-cover object-center rounded hover:scale-105 duration-1000"
                 src={grain.image}
               />
 
               {/* Product details */}
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <div className=" lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h2 className="text-sm title-font text-gray-500 tracking-widest">
                   BRAND NAME
                 </h2>

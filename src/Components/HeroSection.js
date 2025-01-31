@@ -11,21 +11,21 @@ export default function HeroSection() {
       <section className="text-gray-400 bg-gray-900 body-font ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            <h1 className="animBlock title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
               Fresh Vegetables, Delivered Daily
               <br className="hidden lg:inline-block" /> to Your DoorStep !
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p className="animBlock mb-8 leading-relaxed">
               Experience the goodness of farm-fresh produce, handpicked and
               delivered with care. shop now and taste the difference.
             </p>
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-[#d3ac00] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-800 rounded-full text-lg">
+            <div className=" flex justify-center">
+              <button id="view-product" className="inline-flex text-white bg-[#d3ac00] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-800 rounded-full text-lg">
                 <Link to="/Grain">View Products</Link>
               </button>
             </div>
           </div>
-          <div id="container" className=" bg-white lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[350px]">
+          <div id="container" className="animBlock bg-white lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-[350px]">
   <div
     className=" inset-0 object-cover object-center rounded z-10"
     id="hero1"
@@ -40,12 +40,12 @@ export default function HeroSection() {
       <hr />
       <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="animBlock flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
               Pricing
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
+              Whatever you want to grow your selling in market.View plan for know more.
             </p>
             <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
               <button className="py-1 px-4 bg-indigo-500 text-white focus:outline-none">
@@ -155,9 +155,9 @@ export default function HeroSection() {
                 </p>
               </div>
             </div>
-            <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
-                <h2 className="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
+            <div className=" p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div className="animBlock h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
+                <h2 className=" text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
                   BUSINESS
                 </h2>
                 <h1 className="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
@@ -265,8 +265,8 @@ export default function HeroSection() {
                 </p>
               </div>
             </div>
-            <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
+            <div className=" p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div className=" h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden hover:scale-105 duration-1000">
                 <h2 className="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">
                   SPECIAL
                 </h2>
@@ -381,8 +381,8 @@ export default function HeroSection() {
       <hr />
       <section className="text-gray-400 bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-            <div className="w-full sm:p-4 px-4 mb-6">
+          <div className="animBlock flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+            <div className="animBlock w-full sm:p-4 px-4 mb-6">
               <h1 className="title-font font-medium text-xl mb-2 text-white">
                 Connecting Users, Powering Growth
               </h1>
@@ -407,7 +407,7 @@ export default function HeroSection() {
               <p className="leading-relaxed">Products</p>
             </div>
           </div>
-          <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+          <div className="animBlock lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
             <video className="object-cover object-center w-full h-full" controls>
               <source src={add} type="video/mp4" />
             </video>

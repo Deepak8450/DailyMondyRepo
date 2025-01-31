@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import ProductList from "./Components/ProductList";
 import LoginForm from "./Components/LoginForm";
 import MyCart from "./Components/MyCart";
+import OtpVerify from "./Components/OtpVerify";
+
 import tomatoImg from "./Components/productImg/tomato.jfif";
 import LehsunImg from "./Components/productImg/Lehsun.jfif";
 import onionImg from "./Components/productImg/onion.jfif";
@@ -184,40 +186,55 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar username={username} />
+  
+<Router>
+  <Navbar username={username} />
 
-        <Routes>
-          <Route path="/home" element={<HeroSection />} />
-          <Route path="/Profile" element={<UserProfile username={username} cart={cart} />} />
-          <Route path="/Register" element={<LoginForm setUsername={setUsername} />} />
-          <Route
-            path="/Vegetables"
-            element={
-              <ProductList
-                productList={productList}
-                incrementQuantity={incrementQuantity}
-                decrementQuantity={decrementQuantity}
-                handleBuyNow={handleBuyNow}
-              />
-            }
-          />
-          <Route
-            path="/Grain"
-            element={
-              <Grain
-                grains={grainData}
-                incrementGrainQuantity={incrementGrainQuantity}
-                decrementGrainQuantity={decrementGrainQuantity}
-                handleBuyGrain={handleBuyGrain}
-              />
-            }
-          />
-          <Route path="/MyCart" element={<MyCart cart={cart} grains={grainData} username={username} />} />
-        </Routes>
+  <Routes>
+    {/* ✅ Default Route - Show HeroSection on page load */}
+    <Route path="/" element={<HeroSection />} />  
 
-        <Futter />
-      </Router>
+    {/* ✅ Redirect "/" to "/home" for consistency */}
+    <Route path="/home" element={<HeroSection />} />
+
+    <Route path="/Profile" element={<UserProfile username={username} cart={cart} />} />
+    <Route path="/Register" element={<LoginForm setUsername={setUsername} />} />
+    <Route path="/verification" element={<OtpVerify />} />
+
+    <Route
+      path="/Vegetables"
+      element={
+        <ProductList
+          productList={productList}
+          incrementQuantity={incrementQuantity}
+          decrementQuantity={decrementQuantity}
+          handleBuyNow={handleBuyNow}
+        />
+      }
+    />
+
+    <Route
+      path="/Grain"
+      element={
+        <Grain
+          grains={grainData}
+          incrementGrainQuantity={incrementGrainQuantity}
+          decrementGrainQuantity={decrementGrainQuantity}
+          handleBuyGrain={handleBuyGrain}
+        />
+      }
+    />
+
+    <Route path="/MyCart" element={<MyCart cart={cart} grains={grainData} username={username} />} />
+
+    {/* ✅ Redirect unknown routes to Home */}
+    <Route path="*" element={<Navigate to="/" />} />
+  </Routes>
+
+  <Futter />
+</Router>
+
+
     </>
   );
 }
