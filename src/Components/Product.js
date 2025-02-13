@@ -46,7 +46,6 @@ export default function Product({
             {/* Quantity Controls */}
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
               <div className="flex">
-                <span className="mr-3">Color</span>
                 <button type="button" onClick={() => incrementQuantity(index)} className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none rounded">Add item</button>
                 <button className="border-2 border-gray-800 ml-1 bg-gray-700 rounded w-6 h-6 focus:outline-none">{product.quantity}</button>
                 <button type="button" onClick={() => decrementQuantity(index)} className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none rounded">Remove item</button>

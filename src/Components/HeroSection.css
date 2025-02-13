@@ -6,6 +6,7 @@
     background-size: 100% 100%;
     object-fit: cover;
 background-repeat: no-repeat;
+border-radius: 10px;
 }
 #hero1{
 width: 100%;

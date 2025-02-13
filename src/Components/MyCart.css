@@ -100,7 +100,6 @@ label {
 @media only screen and (max-width: 605px)and (min-width: 300px){
   .mycart-container{
     width: 100%;
-    height: 495px;
     overflow: auto;
     display: flex;
     flex-direction: column;

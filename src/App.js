@@ -18,16 +18,18 @@ import CapsicumImg from "./Components/productImg/Capsicum.jfif";
 import Rice from "./Components/productImg/rice.jpg";
 import Wheat from "./Components/productImg/Wheat.jpg";
 import corn from "./Components/productImg/corn.jpg";
-import Rice2 from "./Components/productImg/rice2.jpg";
+import Rice2 from "./Components/productImg/basmati.png";
 import Urad from "./Components/productImg/Urad.jpeg";
 import Rahar from "./Components/productImg/Rahar.jpeg";
 import Moong from "./Components/productImg/Moong.jpeg";
 import Chana from "./Components/productImg/Chana.jpeg";
+import Soyabean from "./Components/productImg/soyabean.png";
 
 import Futter from "./Components/Futter";
 import HeroSection from "./Components/HeroSection";
 import UserProfile from "./Components/UserProfile";
 import Grain from "./Components/Grain";
+import StarRate from "./Components/StarRate";
 // Grain pictures import
 
 function App() {
@@ -80,6 +82,12 @@ function App() {
       price: 70,
       image: Chana,
       quantity: 5
+    },
+    {
+      name: "Soybean",
+      price: 45,
+      image: Soyabean,
+      quantity: 5
     }
   ]);
 
@@ -102,13 +110,13 @@ function App() {
   const [username, setUsername] = useState(null);
   const initialProductList = [
     { img: tomatoImg, price: 40, name: "Tomato", quantity: 0 },
-    { img: LehsunImg, price: 280, name: "Garlic", quantity: 0 },
+    { img: LehsunImg, price: 260, name: "Garlic", quantity: 0 },
     { img: onionImg, price: 30, name: "Onion", quantity: 0 },
-    { img: peasImg, price: 100, name: "Peas", quantity: 0 },
+    { img: peasImg, price: 50, name: "Peas", quantity: 0 },
     { img: potatoImg, price: 40, name: "Potato", quantity: 0 },
     { img: greenCapsicumImg, price: 80, name: "Capsicum", quantity: 0 },
     { img: EggplantsImg, price: 45, name: "Eggplants", quantity: 0 },
-    { img: CapsicumImg, price: 100, name: "Capsicum", quantity: 0 }
+    { img: CapsicumImg, price: 40, name: "Capsicum", quantity: 0 }
   ];
 
   const [productList, setProductList] = useState(initialProductList);
@@ -196,7 +204,7 @@ function App() {
 
     {/* ✅ Redirect "/" to "/home" for consistency */}
     <Route path="/home" element={<HeroSection />} />
-
+    <Route path="/Rate" element={<StarRate />} />
     <Route path="/Profile" element={<UserProfile username={username} cart={cart} />} />
     <Route path="/Register" element={<LoginForm setUsername={setUsername} />} />
     <Route path="/verification" element={<OtpVerify />} />
