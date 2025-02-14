@@ -28,7 +28,7 @@ export default function OtpPage() {
       otp: newOtp
     };
 
-    emailjs.send("service_obqobkl", "template_zdizszy", templateParams, "a7YAGCXDVfEoeC2HU")
+    emailjs.send("service_0298unb", "template_b51owqq", templateParams, "a7YAGCXDVfEoeC2HU")
       .then((response) => {
         console.log("OTP Sent Successfully!", response.status, response.text);
         alert(`OTP Sent Successfully, Please check your inbox.`);

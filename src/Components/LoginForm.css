@@ -162,6 +162,7 @@ form h2{
         border-radius: 18px;
         background: #2a2c32e3;
         padding-left: 10px;
+        color: #fff;
     }
     .form-elements label{
        visibility: hidden;
