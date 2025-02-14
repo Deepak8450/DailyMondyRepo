@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { db } from "./firebaseconfig"; // Ensure correct Firebase import
-import { collection, addDoc, onSnapshot, orderBy, query, Timestamp } from "firebase/firestore";
+import { db } from "./firebaseconfig";
+import { collection, addDoc, query, where, getDocs, Timestamp } from "firebase/firestore";
 import "./LoginForm.css";
 import Capsimg from "./productImg/login-imgc.webp";
 
@@ -23,6 +23,19 @@ export default function LoginForm({ setUsername }) {
     const address = formData.get("Address");
     const location = formData.get("Location");
 
+    setResult("Checking user...");
+
+    // ✅ Check if user already exists in Firestore
+    const usersRef = collection(db, "users");
+    const q = query(usersRef, where("number", "==", number));
+    const querySnapshot = await getDocs(q);
+
+    if (!querySnapshot.empty) {
+      setResult("User already registered, go to login page.");
+      setTimeout(() => navigate("/Login"), 1500); // Redirect to login
+      return;
+    }
+
     setResult("Sending...");
 
     // ✅ Send data via email using Web3Forms
@@ -37,7 +50,7 @@ export default function LoginForm({ setUsername }) {
     if (data.success) {
       setResult("Registration Successfully..");
       setUsername(name);
-      
+
       // ✅ Store user data in Firestore
       try {
         await addDoc(collection(db, "users"), {
@@ -45,7 +58,7 @@ export default function LoginForm({ setUsername }) {
           number,
           address,
           location,
-          timestamp: Timestamp.fromDate(new Date()) // Save with timestamp
+          timestamp: Timestamp.fromDate(new Date()),
         });
 
         console.log("User added to Firestore successfully");
@@ -59,9 +72,7 @@ export default function LoginForm({ setUsername }) {
       handleClick();
 
       // ✅ Redirect to the verification page after a delay
-      setTimeout(() => {
-        navigate("/verification");
-      }, 1000);
+      setTimeout(() => navigate("/verification"), 1000);
     } else {
       console.error("Something went wrong:", data);
       setResult(data.message);
@@ -101,7 +112,7 @@ export default function LoginForm({ setUsername }) {
           </button>
         </form>
       </div>
-      {result && <span>{result}</span>} {/* Show result only if it's not empty */}
+      {result && <span>{result}</span>}
     </div>
   );
 }

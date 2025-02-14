@@ -30,6 +30,7 @@ import HeroSection from "./Components/HeroSection";
 import UserProfile from "./Components/UserProfile";
 import Grain from "./Components/Grain";
 import StarRate from "./Components/StarRate";
+import Login from "./Components/Login";
 // Grain pictures import
 
 function App() {
@@ -205,6 +206,7 @@ function App() {
     {/* ✅ Redirect "/" to "/home" for consistency */}
     <Route path="/home" element={<HeroSection />} />
     <Route path="/Rate" element={<StarRate />} />
+    <Route path="/Login" element={<Login />} />
     <Route path="/Profile" element={<UserProfile username={username} cart={cart} />} />
     <Route path="/Register" element={<LoginForm setUsername={setUsername} />} />
     <Route path="/verification" element={<OtpVerify />} />
